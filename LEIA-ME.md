@@ -1,37 +1,62 @@
-# John Maycon — Montador de móveis
+﻿# John Maycon — site para o novo repositório
 
-Site responsivo em português, com prioridade para celular. Arquivos simples, sem dependências, fontes remotas ou ferramentas de compilação.
+Site em português, responsivo e sem dependências. Abra `index.html` para visualizar localmente.
 
-## Abrir e editar no VS Code
+## O que mudou
 
-1. Extraia o ZIP inteiro.
-2. No VS Code, escolha **Arquivo → Abrir Pasta** e selecione `john-maycon`.
-3. Abra `index.html` diretamente no navegador. Se preferir atualização automática enquanto edita, utilize a extensão Live Server do VS Code.
+- Título explica o serviço logo na primeira tela.
+- Textos mais curtos e remoção da faixa de slogan repetido.
+- Menu fixo com Serviços, Sobre, Orçamento e Dúvidas.
+- No celular, a marca recolhe ao rolar e os atalhos continuam visíveis.
+- A seção atual fica destacada no menu.
+- Fontes maiores e cards em uma coluna no celular.
+- Um único botão fixo de WhatsApp, com mensagem organizada para orçamento.
+- Metadados de compartilhamento e atalho de acessibilidade para o conteúdo.
+
+## Enviar ao novo GitHub
+
+1. Extraia `john-maycon-github.zip` no computador. Não envie apenas o ZIP ao GitHub.
+2. Crie o novo repositório e envie o conteúdo extraído, preservando a pasta `assets`.
+3. Deixe `index.html`, `styles.css` e `script.js` diretamente na raiz do repositório, sem uma pasta extra envolvendo o site.
+4. Confirme o envio em **Commit changes**.
+5. Em **Settings → Pages**, selecione **Deploy from a branch**, a branch **main** e a pasta **/(root)**. Salve.
+6. Quando a publicação terminar, use o endereço exibido pelo GitHub Pages.
+
+Referência: [documentação oficial do GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
+
+Alterar os arquivos no computador não altera o GitHub: envie novamente os arquivos modificados a cada atualização. O pacote não contém a pasta `.git` nem a conexão com o repositório antigo.
+
+## Dados confirmados
+
+- Atendimento: Alvarães–AM.
+- WhatsApp: +55 97 98105-0917 (`5597981050917`).
+- Formas de pagamento: combinar diretamente pelo WhatsApp.
+
+## Informações que ainda precisam ser fornecidas
+
+- **Galeria:** envie quatro a seis fotos reais dos serviços, com uma descrição curta de cada trabalho. Nenhuma galeria fictícia foi incluída.
+- **Avaliações:** envie depoimentos reais autorizados para publicação. Nenhum depoimento foi inventado.
+- **Horários:** ainda são combinados no WhatsApp; faltam horários confirmados para publicá-los.
+
+## Concluir a prévia de compartilhamento
+
+O título e a descrição já estão no HTML. Após criar o novo repositório, substitua o valor relativo de `og:image` pelo endereço público completo da foto, usando a URL real do site seguida de `/assets/john-maycon-original.jpg`.
+
+Adicione também `og:url` e o link canônico com o endereço definitivo do site. Essas URLs dependem do nome do novo repositório e do usuário do GitHub; não foram inventadas. A prévia da imagem nas redes ainda depende desse ajuste.
 
 ## Arquivos
 
-- `index.html`: conteúdo, metadados, seções e o único link de WhatsApp.
-- `styles.css`: cores, tipografia, layout, enquadramento da foto e regras para celular.
-- `script.js`: atualização automática do ano no rodapé; não é necessário para o contato funcionar.
-- `assets/john-maycon-original.jpg`: imagem original fornecida, usada com enquadramento por CSS.
-- `assets/favicon.svg`: ícone da aba, editável.
+- `index.html`: conteúdo, navegação e link de contato.
+- `styles.css`: identidade visual e adaptação ao celular.
+- `script.js`: ano, altura do cabeçalho, menu compacto e seção ativa.
+- `assets/`: foto original e ícone da aba.
 
-## Personalizar
+O conteúdo, os atalhos e o WhatsApp funcionam sem JavaScript. Sem JavaScript, o cabeçalho permanece expandido e a seção ativa não recebe destaque automático.
 
-**Textos:** edite no `index.html`.
+## Logo J.M montagens
 
-**Cores:** altere as variáveis no início de `styles.css`. `--accent` controla o amarelo.
+A logo está aplicada no cabeçalho, na seção Sobre e no rodapé. O arquivo usado é `assets/jm-montagens-logo.png`, com transparência e tamanho adaptado a cada posição. O menu mantém o comportamento compacto no celular.
 
-**Imagem:** substitua a imagem em `assets` e atualize o caminho e as regras `.portrait > img` no CSS. O enquadramento atual mostra o profissional sem modificar o arquivo original. Para uma troca mais simples, use um retrato vertical e defina `inset:0; width:100%; height:100%; object-fit:cover; object-position:center;` na imagem, inclusive na regra mobile.
+A versão para o site foi preparada a partir da imagem enviada, com a ferramenta integrada de edição de imagem (ImageGen), para remover o fundo quadriculado. Prompt utilizado:
 
-**WhatsApp:** há apenas um botão, fixo, usado em todas as larguras de tela. Procure `https://wa.me/559781050917` no HTML. O número foi configurado exatamente conforme o pedido escrito: **+55 97 8105-0917**. A arte enviada apresenta um 9 adicional; ele não foi acrescentado ao link. Confirme o número antes de divulgar. Se o número correto for o da arte, altere o destino para `https://wa.me/5597981050917`, preservando a mensagem após `?text=` se desejar.
-
-## Publicar
-
-Envie `index.html`, `styles.css`, `script.js` e a pasta `assets` para a pasta pública da hospedagem. Preserve a estrutura de pastas. Não é necessário instalar pacotes nem compilar. Este pacote é local; não inclui hospedagem ou domínio.
-
-## Notas de conteúdo e acessibilidade
-
-Não foram inventados depoimentos, números de clientes, anos de experiência, preços ou portfólio de serviços realizados. Região de atendimento, disponibilidade e condições são consultadas no contato. A foto é o material fornecido pelo solicitante; confirme a autorização de uso antes de publicar.
-
-O layout inclui adaptação para celular, foco visível por teclado, títulos semânticos, perguntas expansíveis nativas, descrição de imagem, respeito à preferência de movimento reduzido e espaço reservado para o botão fixo. Não utiliza rastreadores ou cookies.
+> Use case: background-extraction. Edit the attached J.M montagens logo for use as an existing website brand asset. Remove ONLY the white/light gray checkerboard background and surrounding excessive blank margins, making the background genuinely transparent with alpha. Preserve the exact original design: large golden beveled metallic 'J.M' above silver beveled lowercase 'montagens', original shapes, letterforms, proportions, colors and 3D edge detailing. Do not redesign or change spelling. Keep the full logo intact with a small even transparent margin and a tightly framed wide horizontal canvas. No new text, no additional symbols, no painted checkerboard.
