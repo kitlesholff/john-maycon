@@ -1,6 +1,6 @@
-﻿# John Maycon — site para o novo repositório
+# John Maycon — site para o novo repositório
 
-Site em português, responsivo e sem dependências. Abra `index.html` para visualizar localmente.
+Site em português, responsivo e sem etapa de compilação. As fontes são carregadas do Google Fonts, com alternativas locais. Abra `index.html` para visualizar localmente.
 
 ## O que mudou
 
@@ -13,18 +13,15 @@ Site em português, responsivo e sem dependências. Abra `index.html` para visua
 - Um único botão fixo de WhatsApp, com mensagem organizada para orçamento.
 - Metadados de compartilhamento e atalho de acessibilidade para o conteúdo.
 
-## Enviar ao novo GitHub
+## Publicação atual
 
-1. Extraia `john-maycon-github.zip` no computador. Não envie apenas o ZIP ao GitHub.
-2. Crie o novo repositório e envie o conteúdo extraído, preservando a pasta `assets`.
-3. Deixe `index.html`, `styles.css` e `script.js` diretamente na raiz do repositório, sem uma pasta extra envolvendo o site.
-4. Confirme o envio em **Commit changes**.
-5. Em **Settings → Pages**, selecione **Deploy from a branch**, a branch **main** e a pasta **/(root)**. Salve.
-6. Quando a publicação terminar, use o endereço exibido pelo GitHub Pages.
+Repositório: https://github.com/kitlesholff/john-maycon
 
-Referência: [documentação oficial do GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
+Site: https://jm-montagens.vercel.app/
 
-Alterar os arquivos no computador não altera o GitHub: envie novamente os arquivos modificados a cada atualização. O pacote não contém a pasta `.git` nem a conexão com o repositório antigo.
+Os arquivos locais estão conectados ao repositório remoto origin. Para publicar alterações futuras, registre um commit e envie a branch main ao GitHub. A publicação depende da integração e das configurações do projeto na Vercel.
+
+O ZIP é uma cópia opcional e está excluído do controle de versão.
 
 ## Dados confirmados
 
@@ -38,11 +35,9 @@ Alterar os arquivos no computador não altera o GitHub: envie novamente os arqui
 - **Avaliações:** envie depoimentos reais autorizados para publicação. Nenhum depoimento foi inventado.
 - **Horários:** ainda são combinados no WhatsApp; faltam horários confirmados para publicá-los.
 
-## Concluir a prévia de compartilhamento
+## Compartilhamento
 
-O título e a descrição já estão no HTML. Após criar o novo repositório, substitua o valor relativo de `og:image` pelo endereço público completo da foto, usando a URL real do site seguida de `/assets/john-maycon-original.jpg`.
-
-Adicione também `og:url` e o link canônico com o endereço definitivo do site. Essas URLs dependem do nome do novo repositório e do usuário do GitHub; não foram inventadas. A prévia da imagem nas redes ainda depende desse ajuste.
+O HTML usa a URL pública da Vercel em og:url e no link canônico, e a URL absoluta da logo em og:image. Atualize essas referências se o domínio mudar.
 
 ## Arquivos
 
